@@ -1,0 +1,176 @@
+/* This centers the logo and title in one line */
+.logo-title {
+    display: flex;
+    /* Put image and text side by side */
+    justify-content: left;
+    /* Center the whole row */
+    align-items: left;
+    /* Align items in the middle vertically */
+    margin: 20px 0;
+    /* Space above and below */
+}
+
+/* Make the logo image smaller */
+.logo-title img {
+    width: 80px;
+    /* Set width of the image */
+    height: auto;
+    /* Let height adjust automatically */
+    margin-right: 15px;
+    /* Space between image and title */
+    border-radius: 8px;
+}
+
+/* Style the university title */
+#title {
+    font-size: 28px;
+    /* Make the text bigger */
+    font-weight: bold;
+    /* Make the text bold */
+    color: #005f73;
+    /* Nice dark blue color */
+    margin: 20px 0;
+}
+
+/* Style for the menu bar */
+.main-menu {
+    list-style: none;
+    /* Remove bullet points */
+    padding: 0px;
+    text-align: center;
+    /* Center the menu items */
+    background-color: #94d2bd;
+    /* Light green background */
+    margin-bottom: 50px;
+    border-radius: 8px;
+
+}
+
+/* Each menu item */
+.main-menu>li {
+    display: inline-block;
+    /* Put items in one line */
+    position: relative;
+    /* Needed for dropdown submenu */
+    padding: 10px 20px;
+    /* Space inside each item */
+}
+
+/* Menu links */
+.main-menu a {
+    text-decoration: none;
+    /* Remove underline */
+    color: #073b4c;
+    /* Black text */
+    font-weight: bold;
+    /* Bold text */
+    padding: 10px 15px;
+}
+
+
+
+.main-menu li:hover {
+    background-color: aliceblue;
+    border-radius: 5px;
+
+}
+
+
+/* Dropdown menu hidden by default */
+.submenu {
+    display: none;
+    position: absolute;
+    padding: 10px;
+    top: 100%;
+    background-color: #d9f4ee;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    list-style: none;
+    z-index: 1000;
+}
+
+.submenu li a {
+    padding: 10px 20px;
+    display: block;
+    color: #005f73;
+    white-space: nowrap;
+    position: relative;
+}
+
+.main-menu li:hover .submenu {
+    display: block;
+}
+
+
+/* Section styling */
+.container {
+    /* background-color: rgb(210, 255, 235); */
+    background-color: rgb(255, 238, 223);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: auto;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    text-align: center;
+
+}
+
+/* Section styling */
+.container1 {
+    /* background-color: rgb(210, 255, 235); */
+    background-color: rgb(255, 238, 223);
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: auto;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+
+}
+
+
+
+/* Style for section heading */
+.h_border {
+    margin: 30px auto;
+    font-size: 30px;
+    display: inline-block;
+    color: #005f73;
+    border-bottom: 3px solid #3498db;
+
+
+}
+
+/* Style for images */
+.image-cell {
+    border-radius: 12px;
+    height: auto;
+    width: 100%;
+    height: 600px;
+    
+}
+
+
+/* Blockquote style */
+blockquote {
+    font-size: 18px;
+    font-weight: bold;
+    color: #444;
+    text-align: center;
+    font-style: italic;
+    background: #eaf4fc;
+    padding: 25px;
+    border-left: 5px solid #3498db;
+    margin: 40px auto;
+    max-width: 800px;
+}
+
+/* Style for mission section */
+pre {
+    font-size: 16px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    color: rgb(108, 108, 224);
+    border-left: 5px solid #2ecc71;
+    margin: 40px auto;
+    max-width: 800px;
+}

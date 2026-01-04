@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechNexus University</title>
+    <link rel="icon" href="Images/techimage.jpg" type="image">
+    <link rel="stylesheet" href="prj.css">
+
+    <!-- interline css -->
+    <style>
+        .content {
+            width: 80%;
+            max-width: 1100px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+
+        .breadcrumb {
+            position: relative;
+            margin: 0 0 25px 0;
+            padding: 40px 15px;
+            background: url('../Web_Project/Images/Grade-title.jpg') center/cover no-repeat;
+            border-radius: 7px;
+            text-align: center;
+            color: white;
+            overflow: hidden;
+        }
+
+        /* Dark overlay */
+        .breadcrumb::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            /* Dark opacity */
+            z-index: 0;
+        }
+
+        /* Heading */
+        .breadcrumb h1 {
+            position: relative;
+            z-index: 1;
+            margin: 0;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .breadcrumb h1 {
+                font-size: 1.3em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .breadcrumb {
+                padding: 20px 10px;
+            }
+
+            .breadcrumb h1 {
+                font-size: 1em;
+            }
+        }
+
+        .grading-system h4 {
+            font-size: 1.2em;
+            font-weight: 700;
+            color: #444;
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .grading-system p {
+            font-size: 1em;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        .grading-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.95em;
+        }
+
+        .grading-table th,
+        .grading-table td {
+            padding: 12px 15px;
+            text-align: left;
+        }
+
+        .grading-table thead tr {
+            background-color: #004d40;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        .grading-table tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+
+        .grading-table tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+
+        .grading-table tbody tr:last-of-type {
+            border-bottom: 2px solid #004d40;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="logo-title">
+        <img src="Images/techimage.jpg" alt="Logo">
+        <div id="title">TechNexus University</div>
+    </div>
+
+    <header>
+
+        <div class="info-section">
+
+            <ul class="main-menu">
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="#">About</a>
+                    <ul class="submenu">
+                        <li><a href="vision.html">Vision & Mission </a></li>
+                        <li><a href="history.html">History</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Admission</a>
+                    <ul class="submenu">
+                        <li><a href="undergrad.html">Undergraduate</a></li>
+                        <li><a href="postgrad.html">Postgraduate</a></li>
+                        <li><a href="Tuition_Fees.html">Tuition Fees</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Student</a>
+                    <ul class="submenu">
+                        <li><a href="login.php">Student Portal</a></li>
+                        <li><a href="mark.html">Grades, Rules and Regulations </a></li>
+                        <li><a href="calendar.html">Academic Calendar</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Faculty</a>
+                    <ul class="submenu">
+                        <li><a href="Sci.html">Science & Engineering</a></li>
+                        <li><a href="BBA.html">Business and Economics</a></li>
+                        <li><a href="Arts.html">Liberal Arts & Social Sciences</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Administration</a>
+                    <ul class="submenu">
+                        <li><a href="registerRL.php">Register Login </a></li>
+                        <li><a href="#">Trusty Board</a></li>
+                    </ul>
+                </li>
+                <li><a href="research.html">Research</a></li>
+            </ul>
+
+        </div>
+
+    </header>
+
+    <body>
+        <!--<div class="container">-->
+        <div class="breadcrumb">
+            <h1>Grades, Rules and Regulations</h1>
+        </div>
+        <div class="content">
+
+            <section class="grading-system">
+                <h4><strong>Uniform Recommended Grading System</strong></h4>
+                <p>A student may earn five letter grades on the basis of
+                    his/her performance in a course. The letter grades A, B,
+                    C, and D are considered passing grades. The grade F is
+                    the failing grade. The numerical equivalents of the
+                    grades are as follows:</p>
+
+                <table class="grading-table">
+                    <thead>
+                        <tr>
+                            <th>Numerical Scores</th>
+                            <th>Letter Grade</th>
+                            <th>Grade Point</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>80% and above</td>
+                            <td>A+</td>
+                            <td>4.00</td>
+                        </tr>
+                        <tr>
+                            <td>75% to less than 80%</td>
+                            <td>A</td>
+                            <td>3.75</td>
+                        </tr>
+                        <tr>
+                            <td>70% to less than 75%</td>
+                            <td>A-</td>
+                            <td>3.50</td>
+                        </tr>
+                        <tr>
+                            <td>65% to less than 70%</td>
+                            <td>B+</td>
+                            <td>3.25</td>
+                        </tr>
+                        <tr>
+                            <td>60% to less than 65%</td>
+                            <td>B</td>
+                            <td>3.00</td>
+                        </tr>
+                        <tr>
+                            <td>55% to less than 60%</td>
+                            <td>B-</td>
+                            <td>2.75</td>
+                        </tr>
+                        <tr>
+                            <td>50% to less than 55%</td>
+                            <td>C+</td>
+                            <td>2.50</td>
+                        </tr>
+                        <tr>
+                            <td>45% to less than 50%</td>
+                            <td>C</td>
+                            <td>2.25</td>
+                        </tr>
+                        <tr>
+                            <td>40% to less than 45%</td>
+                            <td>D</td>
+                            <td>2.00</td>
+                        </tr>
+                        <tr>
+                            <td>Less than 40%</td>
+                            <td>F</td>
+                            <td>0.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+
+        <!-- /* Footer layout inline css */ -->
+
+        <footer
+            style="display: flex; flex-wrap: wrap; justify-content: space-between; padding: 20px; margin-top: 10px; background: linear-gradient(skyblue,white);border-radius: 5px;">
+
+            <!-- Information Section (Left) -->
+            <div style="min-width: 300px; margin: auto 20px;">
+                <h4 style="font-size: 20px; margin-bottom: 10px;">INFORMATION</h4>
+                <ul style="list-style-type: disc; font: size 17px; padding-left: 20px; margin: 0;">
+                    <li style="color:#000; border-bottom: 1px solid #181830; padding:5px;"><b>Permanent
+                            Campus:</b> Holding 153 (Old 190), Near
+                        Baridhara Diplomatic Zone, South Nayanagar, Vatara,
+                        Dhaka-1212</li>
+                    <li style="color:#000; border-bottom: 1px solid #181830; padding:5px;"><b>Email:</b>
+                        info@uits.edu.bd</li>
+                    <li style="color:#000; border-bottom: 1px solid #181830; padding:5px;"><b>Office:</b>
+                        09678008487</li>
+                    <li style="color:#000; border-bottom: 1px solid #181830; padding:5px;">
+                        <b>Admission:</b> 01939915209, 01713487709,
+                        01844043870, 01914240649
+                    </li>
+                </ul>
+                <p style="padding-top: 20px;">
+                    <a href="https://uits.edu.bd/contact/"
+                        style="font-size: 20px; font-weight: 700; text-decoration: none; color: #000;">Contact</a>
+                </p>
+            </div>
+
+            <!-- Form Section (Right) -->
+            <div style=" min-width: 300px;margin-right: 20px; ">
+                <form style=" padding: 15px;">
+                    <h2 style="margin-bottom: 10px; color: black;text-align: center;">For
+                        Admission</h2>
+                    <div style="margin-bottom: 8px;">
+                        <label for="username" style="display: block; margin-bottom: 5px;">Name</label>
+                        <input type="text" id="username" placeholder="Your Name" required
+                            style="width: 100%; padding: 8px; box-sizing: border-box; margin: auto;">
+                    </div>
+                    <div style="margin-bottom: 8px;">
+                        <label for="email" style="display: block; margin-bottom: 5px;">Email</label>
+                        <input type="email" id="email" placeholder="Your Email" required
+                            style="width: 100%; padding: 8px; box-sizing: border-box;">
+                    </div>
+                    <div style="margin-bottom: 8px;">
+                        <label for="program" style="display: block; margin-bottom: 5px;">Program</label>
+                        <input type="text" id="program" placeholder="Program Name"
+                            style="width: 100%; padding: 8px; box-sizing: border-box;">
+                    </div>
+                    <input type="submit" value="Submit"
+                        style="padding: 10px 20px; background: aliceblue;border-radius: 5px; margin-left: 95px;">
+                </form>
+            </div>
+
+        </footer>
+
+    </body>
+
+</html>
